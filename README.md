@@ -1,6 +1,6 @@
 # Aplicación Yolo
 
-Nuestra aplicación consiste en el reconocimiento de objetos usando las librerías como OpenCV y Yolo. Cada vez que la aplicación encuentra a una eprsona usando su celular esta notificará a través de un bot en Telegram.
+Nuestra aplicación consiste en el reconocimiento de objetos usando las librerías como OpenCV y Yolo. Cada vez que la aplicación encuentra a una persona usando su celular esta notificará a través de un bot en Telegram.
 
 ## Instalación
 
@@ -17,7 +17,14 @@ Descargamos los modelos pre-entrenados de Yolo v3:
 cd weights/
 sh ./download_weights.sh
 ```
-Una vez descarguemos nuestros weights de yolo nos redirigimos a la raíz del proeycto y creamos un ambiente con Anaconda:
+
+Nota: Si eres usuario de Windows puedes descargar los modelos pre-entrenados de Yolo v3 en el siguiente link y copiarlos en la carpeta *weights*:
+
+```
+https://pjreddie.com/media/files/yolov3.weights
+```
+
+Una vez descarguemos nuestros weights de yolo nos redirigimos a la raíz del proyecto y creamos un ambiente con Anaconda:
 
 ```
 cd ..
@@ -50,3 +57,8 @@ Para ejecutar nuestra aplicación debemos escribir el siguiente comando:
 ```
 python main.py
 ```
+
+## Bibliografía
+
+- https://core.telegram.org/bots/api
+- https://pypi.org/project/python-dotenv/
