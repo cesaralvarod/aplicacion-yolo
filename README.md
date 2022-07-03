@@ -28,7 +28,7 @@ Una vez descarguemos nuestros weights de yolo nos redirigimos a la raíz del pro
 
 ```
 cd ..
-conda create --name aplicacion-yolo python=3.6
+conda create --name aplicacion-yolo python=3.9.12
 ```
 
 Activamos nuestro ambiente de Anaconda:
