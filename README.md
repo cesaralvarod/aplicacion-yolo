@@ -28,13 +28,13 @@ Una vez descarguemos nuestros weights de yolo nos redirigimos a la raíz del pro
 
 ```
 cd ..
-conda create --name aplicacion-yolo python=3.9.12
+conda create --name lobe-app python=3.9.12
 ```
 
 Activamos nuestro ambiente de Anaconda:
 
 ```
-conda activate aplicacion-yolo
+conda activate lobe-app
 ```
 
 Una vez trabajando en nuestro ambiente de Anaconda, instalamos nuestras librerías de python:
@@ -42,20 +42,18 @@ Una vez trabajando en nuestro ambiente de Anaconda, instalamos nuestras librerí
 ```
 pip install -r requirements.txt
 ```
-## Uso
-
-Para hacer uso del proyecto tenemos que crear un archivo *.env* en la raíz del proyecto donde escribiremos lo siguiente:
-
-```
-TELEGRAM_TOKEN_BOT=<Nuestro token que nos genera el bot de Telegram>
-TELEGRAM_CHAT_ID=<Código del chat del grupo donde se encuentra el bot>
-```
 
 Lo anteriormente mencionado es necesario si queremos usar nuestra aplicación con envío de notificaciones a través de un bot de Telegram.
 Para ejecutar nuestra aplicación debemos escribir el siguiente comando:
 
 ```
 python main.py
+```
+
+ o también 
+ 
+```
+python main.py -i RUTA_DE_LA_IMAGEN
 ```
 
 ## Bibliografía
